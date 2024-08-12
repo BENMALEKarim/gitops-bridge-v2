@@ -148,17 +148,17 @@ variable "gitops_bridge_tenant" {
 variable "gitops_bridge_values_repo_username" {
   description = "gitops_bridge_values_username_repo"
   type        = string
-  default     = BENMALEKarim
+  default     = "BENMALEKarim"
 }
 
 variable "gitops_bridge_values_repo_name" {
   description = "gitops_bridge_values_repo_name"
   type        = string
-  default     = gitops-bridge-v2
+  default     = "gitops-bridge-v2"
 }
 
 variable "gitops_bridge_values_repo_branch" {
   description = "gitops_bridge_values_repo_branch"
   type        = string
-  default     = main
+  default     = "main"
 }
