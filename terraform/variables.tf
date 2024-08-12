@@ -26,7 +26,7 @@ variable "region" {
 variable "kubernetes_version" {
   description = "Kubernetes version"
   type        = string
-  default     = "1.29"
+  default     = "1.30"
 }
 variable "addons" {
   description = "Kubernetes addons"
@@ -137,4 +137,28 @@ variable "enable_gitops_auto_bootstrap" {
   description = "Automatically deploy addons"
   type        = bool
   default     = true
+}
+
+variable "gitops_bridge_tenant" {
+  description = "tenant of the cluster"
+  type        = string
+  default     = "platform-team"
+}
+
+variable "gitops_bridge_values_repo_username" {
+  description = "gitops_bridge_values_username_repo"
+  type        = string
+  default     = BENMALEKarim
+}
+
+variable "gitops_bridge_values_repo_name" {
+  description = "gitops_bridge_values_repo_name"
+  type        = string
+  default     = gitops-bridge-v2
+}
+
+variable "gitops_bridge_values_repo_branch" {
+  description = "gitops_bridge_values_repo_branch"
+  type        = string
+  default     = main
 }
