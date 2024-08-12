@@ -1,3 +1,5 @@
 addons:
   aws_load_balancer_controller:
     targetRevision: "1.7.1"
+  aws_ingress_nginx:
+    targetRevision: "4.8.1"   
