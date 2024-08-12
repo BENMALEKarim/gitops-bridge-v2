@@ -1,0 +1,3 @@
+addons:
+  aws_load_balancer_controller:
+    targetRevision: "1.7.1"
